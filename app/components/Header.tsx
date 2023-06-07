@@ -1,97 +1,99 @@
 import Image from 'next/image'
-import Buttons from './Buttons'
+import headerTop from '../assets/headerTop.png'
+import headerMiddle from '../assets/headerMiddle.png'
+import headerBottom from '../assets/headerBottom.png'
+import arrow from '../assets/arror.svg'
 
-import { FiArrowUpLeft, FiArrowUpRight } from 'react-icons/fi'
 import { BsCheck2All } from 'react-icons/bs'
 
-import { useInView } from 'framer-motion'
-
-import img1 from '../assets/headerTop.png'
-import img2 from '../assets/headerMiddle.png'
-import img3 from '../assets/headerBottom.png'
+import Buttons from './Buttons'
 
 export default function Header() {
   return (
-    <header className="w-full lg:h-[50rem] mt-[7rem]">
-      <div className="w-widthSm mx-auto md:w-widthMd md:mx-auto md:h-[50rem] lg:w-widthLg lg:mx-auto flex flex-col-reverse items-center gap-12 py-8 lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-8">
+    <header className="w-full h-[45rem] lg:h-[50rem] mt-0 lg:mt-16 md:bg-black py-3">
+      <div className="w-wsm mx-auto h-full md:w-wmd lg:w-wlg flex flex-col-reverse items-start gap-8 lg:flex lg:flex-row justify-between pt-56 lg:pt-3">
         {/* left */}
-        <div className=" lg:w-[50%] flex flex-col items-start gap-8">
-          <div className="w-full flex flex-col items-start gap-2">
-            <h2 className="text-2xl md:text-7xl first-letter:capitalize leading-tight lg:text-[4rem] font-inconsolata">
-              bring the power of AI to your conversations
-            </h2>
-            <h6 className="text-2xl font-poppins">
-              work faster, smarter, and better together
+        <div className="w-full lg:w-1/2 h-full py-3 flex flex-col items-start gap-3">
+          <div className="w-full lg:w-[26rem] flex flex-col items-start gap-1">
+            <h1 className="font-inconsolata font-bold text-[2.7rem] lg:text-6xl">
+              Bring the power of AI to your conversations
+            </h1>
+            <h6 className="font-sans text-lg">
+              Work Faster, Smarter, and Better Together
             </h6>
-            <div className="md:w-80 md:mt-3">
-              <p className="text-xs font-poppins">
-                Experience the power of AI language models with OmniGPT. Our
-                chat platform provides seamless communication across multiple
-                channels.
-              </p>
-            </div>
           </div>
+          <p className="text-colorAll font-sans text-sm">
+            Experience the power of AI language models with OmniGPT. Our chat
+            platform provides seamless communication across multiple channels.
+          </p>
 
-          <div className="flex flex-col items-start gap-3">
-            <small className="text-sm font-poppins">
+          <div className="flex flex-col items-start gap-1 mt-2">
+            <span className="text-lg font-sans">
               Try the OmniGPT for free. 15-day trial, no credit card required.
-            </small>
+            </span>
             <Buttons
               text="start your free trial"
-              className="w-48 h-12 py-2 px-2 bg-colorGreenLight rounded-sm text-sm first-letter:capitalize font-poppins text-white"
+              className="w-fit px-3 py-2 bg-colorGreenLight text-white first-letter:capitalize rounded-md font-sans"
             />
           </div>
         </div>
 
         {/* right */}
-        <div className="mt-12 lg:w-[45%] h-full flex flex-col items-center gap-12 pt-16">
-          {/* top */}
-          <div className="flex items-center gap-4 lg:w-full h-full lg:flex lg:items-center lg:gap-4">
-            <div className="w-52 h-20 md:w-96 md:h-28 lg:w-80 lg:h-24 bg-colorYellow rounded-l-full rounded-br-full relative">
+        <div className="w-full lg:w-1/2 h-fit lg:h-full mt-12 py-1 flex flex-col items-start gap-8">
+          <div className="w-full h-fit flex gap-4">
+            <div className="w-56 h-24 md:w-80 md:h-28 bg-colorYellow rounded-l-full rounded-br-full relative">
               <Image
-                src={img1}
-                alt="header image 1"
-                className="w-full h-32 top-[-2.5rem] left-0 md:w-96 md:h-48 object-contain md:bottom-0 md:right-0 absolute"
+                src={headerTop}
+                alt=""
+                className="bottom-0 left-0 absolute"
               />
             </div>
-            <div className="w-20 h-20 md:w-24 md:h-24 grid place-items-center bg-colorPurple rounded-full">
-              <FiArrowUpLeft style={{ color: '#fff', fontSize: '3rem' }} />
+            <div className="w-20 lg:w-28 aspect-square bg-colorPurple grid place-items-center rounded-full">
+              <Image
+                src={arrow}
+                alt=""
+                className="sm:w-12 sm:h-12 sm:object-cover"
+              />
             </div>
           </div>
 
-          {/* middle */}
-          <div className="hidden lg:w-full lg:flex lg:items-center lg:gap-4">
-            <div className="w-24 h-24 grid place-items-center bg-colorGreenLight rounded-full">
-              <FiArrowUpRight style={{ color: '#fff', fontSize: '5rem' }} />
+          {/* second */}
+          <div className="hidden lg:flex lg:items-center lg:gap-4">
+            <div className="w-20 lg:w-28 aspect-square bg-colorGreenLight grid place-items-center rounded-full">
+              <Image src={arrow} alt="" className="" />
             </div>
-            <div className="w-80 h-24 bg-white rounded-l-full rounded-r-full relative">
-              <Image src={img2} alt="" className="bottom-0 left-12 absolute" />
+            <div className="w-56 h-24 md:w-80 md:h-28 bg-colorWhite rounded-l-full rounded-r-full relative">
+              <Image
+                src={headerMiddle}
+                alt=""
+                className="bottom-0 left-16 absolute"
+              />
             </div>
           </div>
-          {/* bottom */}
-          <div className="hidden lg:w-full lg:flex lg:flex-col lg:items-center lg:gap-8">
-            <div className="w-96 h-20 bg-colorPurple rounded-r-full rounded-tl-full relative">
-              <small className="text-xs font-poppins pt-3 right-[2rem] top-1 absolute">
-                @OmniGPT Can you give us
-                <br /> an update on the latest project
-                <br /> status?
-              </small>
-              <div className="flex items-center gap-8 pb-1 right-[2rem] bottom-0 absolute">
-                <small className="text-xs font-poppins">11:45</small>
+
+          {/* third */}
+          <div className="w-full hidden lg:flex lg:items-center lg:gap-4">
+            <div className="w-full h-28 bg-colorPurple rounded-r-full rounded-tl-full relative">
+              <span className="w-48 text-sm text-colorWhite text-start font-poppins top-2 right-20 absolute">
+                @OmniGPT Can you give us an update on the latest project status?
+              </span>
+              <div className="flex items-center gap-1 bottom-8 right-20 absolute">
+                <span className="text-xs text-colorAll font-sans">11:41</span>
                 <BsCheck2All style={{ color: '#05E283' }} />
               </div>
             </div>
-            {/* bottom */}
-            <div className="flex items-center gap-4">
-              <div className="w-80 h-24 bg-colorGreenLight rounded-l-full rounded-r-full relative">
-                <Image
-                  src={img3}
-                  alt=""
-                  className="w-60 h-60 object-cover bottom-0 left-12 absolute"
-                />
-              </div>
-              <div className="w-24 h-24 grid place-items-center bg-colorYellow rounded-r-full rounded-tl-full"></div>
+          </div>
+
+          {/* fourth */}
+          <div className="hidden lg:flex lg:items-center lg:gap-4">
+            <div className="w-56 h-24 md:w-80 md:h-28 bg-colorGreenLight rounded-l-full rounded-r-full relative">
+              <Image
+                src={headerBottom}
+                alt=""
+                className="bottom-0 left-0 absolute"
+              />
             </div>
+            <div className="w-28 aspect-square bg-colorYellow rounded-tl-full rounded-r-full"></div>
           </div>
         </div>
       </div>

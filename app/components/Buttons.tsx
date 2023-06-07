@@ -10,7 +10,7 @@ type ButtonProps = {
 const Buttons: React.FC<ButtonProps> = ({ text, className }) => {
   return (
     <motion.button
-      className={`button ${className}`}
+      className={className}
       whileHover={{ scale: 1.1, opacity: 0.8, background: '#05E283' }}
       whileTap={{ scale: 0.9, opacity: 0.6, background: '#1FC77E' }}
     >

@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full h-16 grid place-items-center bg-transparent z-50 fixed left-0 top-0 relative">
-      <div className="w-widthSm md:w-widthMd lg:w-widthLg mx-auto flex items-center justify-between relative">
+      <div className="w-wsm md:w-wmd lg:w-wlg mx-auto flex items-center justify-between relative">
         {/* logo */}
         <div className="">
           <Link href="/" className="flex items-start gap-0">
@@ -37,13 +37,13 @@ export default function Navbar() {
         {/* nav links */}
         <div className="hidden lg:block">
           <ul className="hidden lg:flex lg:items-center lg:gap-4 h-16">
-            <li className="font-bold font-sans text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
+            <li className="font-poppins text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
               <Link href="/">blog</Link>
             </li>
-            <li className="font-bold font-sans text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
+            <li className="font-poppins text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
               <Link href="/">contact us</Link>
             </li>
-            <li className="font-bold font-sans text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
+            <li className="font-poppins text-lg capitalize md:cursor-pointer hover:text-colorGreenDark transition duration-200">
               <Link href="/">sign in</Link>
             </li>
           </ul>

@@ -27,9 +27,9 @@ module.exports = {
         colorAll: 'rgba(255,255,255,0.2)',
       },
       width: {
-        widthLg: '80%',
-        widthMd: '88%',
-        widthSm: '90%',
+        wlg: '80%',
+        wmd: '85%',
+        wsm: '90%',
       },
       fontFamily: {
         poppins: ['var(--font-poppins)'],
