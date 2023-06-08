@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${sans.variable} ${inconsolata.variable} bg-backgroundColor text-colorWhite overflow-x-hidden`}
+        className={`${poppins.variable} ${sans.variable} ${inconsolata.variable} bg-backgroundColor text-colorWhite overflow-x-hidden relative`}
       >
         {children}
       </body>

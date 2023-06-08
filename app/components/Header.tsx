@@ -3,6 +3,7 @@ import headerTop from '../assets/headerTop.png'
 import headerMiddle from '../assets/headerMiddle.png'
 import headerBottom from '../assets/headerBottom.png'
 import arrow from '../assets/arror.svg'
+import element from '../assets/Graphic_Elements.svg'
 
 import { BsCheck2All } from 'react-icons/bs'
 
@@ -10,14 +11,22 @@ import Buttons from './Buttons'
 
 export default function Header() {
   return (
-    <header className="w-full h-[45rem] lg:h-[50rem] mt-0 lg:mt-16 md:bg-black py-3">
+    <header className="w-full h-[45rem] lg:h-[45rem] mt-0 lg:mt-16 py-3">
       <div className="w-wsm mx-auto h-full md:w-wmd lg:w-wlg flex flex-col-reverse items-start gap-8 lg:flex lg:flex-row justify-between pt-56 lg:pt-3">
         {/* left */}
-        <div className="w-full lg:w-1/2 h-full py-3 flex flex-col items-start gap-3">
-          <div className="w-full lg:w-[26rem] flex flex-col items-start gap-1">
-            <h1 className="font-inconsolata font-bold text-[2.7rem] lg:text-6xl">
-              Bring the power of AI to your conversations
-            </h1>
+        <div className="w-full lg:w-1/2 h-fit py-3 flex flex-col items-start gap-3">
+          <div className="w-full h-fit lg:w-[26rem] flex flex-col items-start gap-1">
+            <div className="w-full h-full lg:h-48 relative">
+              <h1 className="font-inconsolata font-bold text-[2.7rem] lg:text-6xl">
+                Bring the power of AI to your conversations
+              </h1>
+              <Image
+                src={element}
+                alt=""
+                className="-bottom-4 -left-4 absolute -z-10"
+              />
+            </div>
+
             <h6 className="font-sans text-lg">
               Work Faster, Smarter, and Better Together
             </h6>
@@ -39,7 +48,7 @@ export default function Header() {
         </div>
 
         {/* right */}
-        <div className="w-full lg:w-1/2 h-fit lg:h-full mt-12 py-1 flex flex-col items-start gap-8">
+        <div className="w-full lg:w-1/2 h-fit lg:h-full lg:mt-16 py-1 flex flex-col items-start gap-8">
           <div className="w-full h-fit flex gap-4">
             <div className="w-56 h-24 md:w-80 md:h-28 bg-colorYellow rounded-l-full rounded-br-full relative">
               <Image
