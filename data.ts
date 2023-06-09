@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     title: 'OmniGPT has completely',
     span: 'transformed the way my team works together',
     description:
-      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to improve their productivity and efficiency.”',
+      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to.”',
     image: woman,
     name: 'Luke John',
   },
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     title: 'OmniGPT has completely',
     span: 'transformed the way my team works together',
     description:
-      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to improve their productivity and efficiency.”',
+      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to”',
     image: woman,
     name: 'Luke John',
   },
@@ -52,7 +52,7 @@ export const testimonials: Testimonial[] = [
     title: 'OmniGPT has completely',
     span: 'transformed the way my team works together',
     description:
-      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to improve their productivity and efficiency.”',
+      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to”',
     image: woman,
     name: 'Luke John',
   },
@@ -70,7 +70,7 @@ export const testimonials: Testimonial[] = [
     title: 'OmniGPT has completely',
     span: 'transformed the way my team works together',
     description:
-      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to improve their productivity and efficiency.”',
+      '“With the ability to seamlessly communicate across multiple channels, we are able to collaborate in real-time and make decisions faster than ever. Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries. I would highly recommend OmniGPT to any organization looking to.”',
     image: woman,
     name: 'Luke John',
   },

@@ -10,14 +10,14 @@ export default function AllInOne() {
     <section className="w-full h-fit lg:h-[47rem] mt-8 py-4">
       <div className="w-wsm mx-auto md:w-wmd lg:w-wlg h-full flex flex-col-reverse items-center gap-6 lg:flex lg:flex-row">
         {/* left */}
-        <div className="w-full lg:w-1/2 h-fit lg:h-full relative grid place-items-center md:flex md:items-start">
+        <div className="w-full lg:w-1/2 h-fit lg:h-full relative grid place-items-center md:grid md:place-items-center">
           <Image src={apple} alt="" className="z-10" />
-          <div className="w-28 aspect-square rounded-r-full rounded-tl-full bg-colorGreenLight left-0 bottom-20 absolute"></div>
-          <div className="w-28 aspect-square rounded-l-full rounded-tr-full bg-colorYellow right-4 lg:right-36 top-20 absolute"></div>
-          <div className="w-28 aspect-square grid place-items-center rounded-full bg-white top-4 left-0 lg:-left-2 absolute z-50">
+          <div className="w-28 aspect-square rounded-r-full rounded-tl-full bg-colorGreenLight left-0 bottom-20 absolute md:left-28 lg:left-0"></div>
+          <div className="w-28 aspect-square rounded-l-full rounded-tr-full bg-colorYellow right-4 md:right-36 lg:right-36 top-20 absolute"></div>
+          <div className="w-28 aspect-square grid place-items-center rounded-full bg-white top-4 left-0 md:left-32 lg:-left-2 absolute z-50">
             <Image src={facebook} alt="messenger" className="" />
           </div>
-          <div className="w-28 aspect-square grid place-items-center rounded-full bg-white bottom-4 lg:bottom-32 right-0 lg:right-32 absolute z-50">
+          <div className="w-28 aspect-square grid place-items-center rounded-full bg-white bottom-4 lg:bottom-32 right-0 md:right32 lg:right-32 absolute z-50">
             <Image src={whatsapp} alt="whatsapp" className="" />
           </div>
         </div>

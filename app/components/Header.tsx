@@ -50,19 +50,15 @@ export default function Header() {
         {/* right */}
         <div className="w-full lg:w-1/2 h-fit lg:h-full lg:mt-16 py-1 flex flex-col items-start gap-8">
           <div className="w-full h-fit flex gap-4">
-            <div className="w-56 h-24 md:w-80 md:h-28 bg-colorYellow rounded-l-full rounded-br-full relative">
+            <div className="w-60 h-24 md:w-[27rem] md:h-32 lg:w-80 lg:h-28 bg-colorYellow rounded-l-full rounded-br-full relative">
               <Image
                 src={headerTop}
                 alt=""
                 className="bottom-0 left-0 absolute"
               />
             </div>
-            <div className="w-20 lg:w-28 aspect-square bg-colorPurple grid place-items-center rounded-full">
-              <Image
-                src={arrow}
-                alt=""
-                className="sm:w-12 sm:h-12 sm:object-cover"
-              />
+            <div className="w-28 lg:w-28 aspect-square bg-colorPurple grid place-items-center rounded-full">
+              <Image src={arrow} alt="" className="w-12 h-12" />
             </div>
           </div>
 
